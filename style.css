@@ -6,27 +6,35 @@
 body {
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
+    background-color: #1B1A55;
 }
 
 header {
     position: sticky;
     top: 0;
-    background-color: #74a0d1;
+    background-color: #070F2B;
 }
 
-nav ul div img{
+nav div img{
     width: 100px;
+    margin-left: 30px;
 }
-nav ul {
+nav{
     display: flex;
-    gap: 20px;
-    justify-content: space-around;
-    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
+    font-family: "Kaisei Decol", serif;
+}
+nav ul{
+    display: flex;
+    gap: 45px;
+    margin-right: 20px;
+
 }
 
 nav ul li {
@@ -34,6 +42,7 @@ nav ul li {
     justify-content: center;
     align-items: center;
     display: flex;
+    flex-direction: row;
 }
 
 .b {
@@ -54,7 +63,7 @@ nav ul li {
     width: 27%;
     align-items: center;
     text-align: center;
-    background-color: rgb(127 97 178 / 50%);
+    background-color:#535C91;
 
 }
 
@@ -64,6 +73,7 @@ nav ul li {
     border: none;
     border-radius: 20px;
     margin: 10px;
+    background-color: #FFF1DB;
 }
 
 .b2 label {
@@ -74,6 +84,7 @@ nav ul li {
 
 .b1 {
     width: 73%;
+    background-color: #9290C3;
 }
 .Signup{
     font-family: cursive;
@@ -82,7 +93,7 @@ nav ul li {
 }
 .butn button{
     border: none;
-    background: #055fa2;
+    background: #536493;
     padding: 10px 50px;
     border-radius: 10px;
     margin: 40px;
