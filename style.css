@@ -93,8 +93,10 @@ nav ul li {
 }
 .butn button{
     border: none;
-    background: #536493;
+    background: #ffffff;
     padding: 10px 50px;
     border-radius: 10px;
     margin: 40px;
+    cursor: pointer;
+
 }
