@@ -1,3 +1,13 @@
+@keyframes buttonani{
+    from{
+        }
+    to{
+        background-color: #070F2B;
+        color: white;
+
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -90,6 +100,9 @@ nav ul li {
     font-family: cursive;
     margin:70px 0;
     font-size: 35px;
+}
+.butn button:hover{
+    animation: buttonani 0.1s linear forwards;
 }
 .butn button{
     border: none;

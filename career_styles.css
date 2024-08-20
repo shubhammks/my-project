@@ -4,6 +4,15 @@
 
 }
 
+@keyframes boxanima{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -53,19 +62,22 @@ nav ul li {
     flex-direction: row;
 }
 
+.b:hover{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: boxanima 0.5s cubic-bezier(0, 0, 0, 0.97) forwards;
+}
 .b {
     border: 1px solid black;
-    height: 300px;
-    margin: 10px;
+    height: 400px;
     border-radius: 10px;
     width: 300px;
     background-color: #535C91;
-    margin: 30px;
+    margin: 70px;
     justify-content: center;
     align-items: center;
     display: flex;
-    box-shadow: 16px 14px 20px 0px #9290c3;
-
+    box-shadow: 0px 0px 20px 10px #9290c3;
+    text-align: center;
 }
 
 .home {

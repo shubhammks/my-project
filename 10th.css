@@ -1,0 +1,89 @@
+.b1 {
+    align-items: center;
+    text-align: center;
+
+}
+
+@keyframes boxanima{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-color: #E2E2B6;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #070F2B;
+}
+
+nav div img {
+    width: 100px;
+    margin-left: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Kaisei Decol", serif;
+}
+
+nav ul {
+    display: flex;
+    gap: 45px;
+    margin-right: 20px;
+
+}
+
+nav ul li {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.main>div{
+    margin: 50px;
+}
+.main>h2{
+    border-bottom:solid 2px black;
+    padding-left:50px ;
+    margin-left: -50px;
+}
+.main{
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.descri{
+    font-size: 25px;
+    margin-left: 20px
+}
+.line{
+    background-color: black;
+    height: 2px;
+}
+h4{
+    border-bottom: 1px solid black;
+}
