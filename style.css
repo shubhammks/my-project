@@ -16,17 +16,19 @@
 body {
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
-    background-color: #1B1A55;
+    background-color: #ffffff;
 }
 
 header {
     position: sticky;
     top: 0;
-    background-color: #070F2B;
+    background-color: #ffffff;
+    border-bottom: solid 1px rgb(141, 139, 139);
+    z-index: 1;
 }
 
 nav div img{
-    width: 100px;
+    width: 200px;
     margin-left: 30px;
 }
 nav{
@@ -37,7 +39,7 @@ nav{
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: "Kaisei Decol", serif;
 }
 nav ul{
@@ -56,10 +58,11 @@ nav ul li {
 }
 
 .b {
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.358);
     height: 500px;
-    margin: 10px;
-    border-radius: 10px;
+    margin-top: 20px;
+
+  
 }
 
 .home {
@@ -74,6 +77,8 @@ nav ul li {
     align-items: center;
     text-align: center;
     background-color:#535C91;
+    border-radius: 0px 10px 10px 0px;
+
 
 }
 
@@ -93,8 +98,9 @@ nav ul li {
 }
 
 .b1 {
-    width: 73%;
+    width: 75%;
     background-color: #9290C3;
+    border-radius: 10px 0 0 10px;
 }
 .Signup{
     font-family: cursive;

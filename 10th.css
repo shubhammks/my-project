@@ -4,11 +4,12 @@
 
 }
 
-@keyframes boxanima{
-    from{
+@keyframes boxanima {
+    from {
         transform: scale(1);
     }
-    to{
+
+    to {
         transform: scale(1.1);
     }
 }
@@ -22,17 +23,18 @@
 body {
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
-    background-color: #E2E2B6;
+    background-color: #ffffff
+    ;
 }
 
 header {
     position: sticky;
     top: 0;
-    background-color: #070F2B;
+    border-bottom: solid 1px rgb(141, 139, 139);
 }
 
 nav div img {
-    width: 100px;
+    width: 200px;
     margin-left: 30px;
 }
 
@@ -44,7 +46,7 @@ nav {
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: "Kaisei Decol", serif;
 }
 
@@ -63,24 +65,40 @@ nav ul li {
     flex-direction: row;
 }
 
-.main>div{
+.main>div {
     margin: 50px;
 }
-.main>h3{
-    border-bottom:solid 2px black;
-    padding-left:50px ;
-    margin-left: -50px;
+
+.main>h3 {
+    border-bottom: solid 2px black;
+    text-align: center;
 }
-.main{
+
+.main {
     margin-left: 50px;
     margin-top: 20px;
     font-size: 30px;
 }
-.descri{
+
+.descri {
     font-size: 25px;
     margin-left: 20px
 }
 
-h4{
-    border-bottom: 1px solid black;
+.card {
+    border: 1px solid black;
+    
+    padding: 30px;
+    box-shadow: black 10px 9px 17px 5px;
+    background-color: #535C91;
+    width: 500px;
+    text-align: center;
+}
+
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
