@@ -73,13 +73,13 @@ nav ul li {
     height: 400px;
     border-radius: 10px;
     width: 300px;
-    background-color: #535C91;
     margin: 70px;
     justify-content: center;
     align-items: center;
     display: flex;
-    box-shadow: 0px 0px 20px 10px #68638093;
     text-align: center;
+        box-shadow: #00000057 10px 9px 17px 5px;
+    background-color: #787fa8;
 }
 
 .home {

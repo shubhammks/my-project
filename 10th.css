@@ -30,7 +30,9 @@ body {
 header {
     position: sticky;
     top: 0;
+    background-color: white;
     border-bottom: solid 1px rgb(141, 139, 139);
+    z-index: 10;
 }
 
 nav div img {
@@ -48,6 +50,7 @@ nav ul li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-family: "Kaisei Decol", serif;
+    font-size: 20px;
 }
 
 nav ul {
@@ -87,18 +90,66 @@ nav ul li {
 
 .card {
     border: 1px solid black;
-    
     padding: 30px;
-    box-shadow: black 10px 9px 17px 5px;
-    background-color: #535C91;
+    box-shadow: #00000057 10px 9px 17px 5px;
+    background-color: #787fa8;
     width: 500px;
+    height: 50px;
     text-align: center;
-}
+    overflow: hidden;  
+  position: relative;  
+  }
 
 
 .cards {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content:space-around;
     gap: 30px;
+    
+}
+.descri>li {
+    list-style:square;
+    text-align:left;
+    }
+.descri {
+    /* max-height: 0;  
+    opacity: 0;  
+    overflow: hidden;  
+    transition: max-height 0.5s ease, opacity 0.5s ease; */
+    margin-top: 10px;
+   
+  }
+  /* .card:hover .descri {
+    max-height: 400px; 
+    opacity: 1; 
+  } */
+
+
+@keyframes expand{
+    from{
+        height: 50px;
+        .descri{
+           opacity:0;
+           }
+    }
+    to{
+        height:600px;
+      
+        .descri{
+           opacity:1;
+           }
+      
+    }
+}
+
+.sci:hover{
+    animation: expand 2s ease-in-out forwards;
+   
+}
+.com:hover{
+    animation: expand 2s ease-in-out forwards;
+   
+}
+.art:hover{
+    animation: expand 2s ease-in-out forwards;
 }
