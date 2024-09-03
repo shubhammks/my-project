@@ -4,18 +4,6 @@
 
 }
 
-@keyframes boxanima {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(1.1);
-    }
-}
-
-
-
 
 .menu>svg {
     display: none;
@@ -81,9 +69,21 @@
     display: none;
 }
 
+
+@keyframes boxanima {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 body {
@@ -96,7 +96,7 @@ header {
     position: sticky;
     top: 0;
     width: 98.9vw;
-    background-color: #5dc6d400;
+    background-color: #5dc7d4;
     border-bottom: solid 1px rgb(141, 139, 139);
     z-index: 1;
 }
@@ -112,81 +112,128 @@ nav {
     align-items: center;
 }
 
-nav ul li a:hover {
-    background-color: red;
-}
 nav ul li a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: "Kaisei Decol", serif;
-    padding: 5px 10px;
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     font-size: 20px;
 }
 
 nav ul {
     display: flex;
-    gap: 25px;
+    gap: 45px;
     margin-right: 20px;
 
 }
 
 nav ul li {
     list-style: none;
-  
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 }
 
+.main>div {
+    margin: 50px;
+}
+
+.main h3 {
+    border-bottom: solid 2px rgb(255, 255, 255);
+    text-align: center;
+    color: white !important;
+   padding-top: 20px;
+}
+
+.main {
+    font-size: 30px;
+}
+
+.descri {
+    font-size: 25px;
+    margin-left: 20px
+}
+
+.card {
+    border: 1px solid black;
+    padding: 30px;
+    box-shadow: #00000057 10px 9px 17px 5px;
+    background-color: #787fa8;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+
+}
+
+.descri>li {
+    list-style: square;
+    text-align: left;
+}
+
+.descri {
+    /* max-height: 0;  
+    opacity: 0;  
+    overflow: hidden;  
+    transition: max-height 0.5s ease, opacity 0.5s ease; */
+    margin-top: 10px;
+
+}
+
+/* .card:hover .descri {
+    max-height: 400px; 
+    opacity: 1; 
+  } */
+
+
+@keyframes expand {
+    from {
+        height: 80px;
+
+        .descri {
+            opacity: 0;
+        }
+    }
+
+    to {
+        height: 700px;
+
+        .descri {
+            opacity: 1;
+        }
+
+    }
+}
+
+.sci:hover {
+    animation: expand 2s ease-in-out forwards;
+
+}
+
+.com:hover {
+    animation: expand 2s ease-in-out forwards;
+
+}
+
+.art:hover {
+    animation: expand 2s ease-in-out forwards;
+}
 .bg {
     width: 100%;
-    height: 100vh;
+    height: 1000px;
     position: absolute;
     z-index: -1;
     filter: brightness(40%);
 }
 
-.b:hover {
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-    animation: boxanima 0.5s cubic-bezier(0, 0, 0, 0.97) forwards;
-}
-
-.b {
-    border: 1px solid rgb(154, 154, 154);
-    height: 180px;
-    border-radius: 10px;
-    width: 300px;
-    margin: 70px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    text-align: center;
-    box-shadow: #00000057 10px 9px 17px 5px;
-    background-color: #787fa8;
-}
-
-.home {
-    width: 98vw;
-    display: flex;
-    font-size: 20px;
-    justify-content: center;
-}
-
-.b2 {
-    align-items: center;
-    text-align: center;
-}
-
-.b>a {
-    text-decoration: none;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 35px;
-    font-family: "Kaisei Decol", serif;
-}
 
 @media screen and (max-width:700px) {
     .home {
@@ -198,7 +245,6 @@ nav ul li {
     header {
         width: 100vw;
     }
-
 
     .bg {
         width: 100vw;
@@ -223,13 +269,26 @@ nav ul li {
     }
 
     .b {
-        margin: 20px auto;
-        width: 60%;
-        height: 300px;
+        margin: 10px;
+        width: 95%;
+    }
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+        height: 80px;
     }
 
-    .b a {
-        font-size: 40px;
+    .cards {
+
+        display: flex;
+        justify-content: space-around;
+        gap:30px 0;
+        flex-direction: column;
+    
     }
+    .main{
+        margin: 0;
+    }
+
 
 }
