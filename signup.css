@@ -1,0 +1,207 @@
+nav div:hover {
+    animation: button 0.1s ease-in-out forwards;
+}
+
+nav div a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav div {
+    margin: 50px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+
+
+}
+
+.line {
+    background-color: white;
+    width: 3px;
+    height: 80vh;
+}
+
+@keyframes button {
+    from {
+        background-color: white;
+    }
+
+    to {
+        background-color: blue;
+    }
+
+}
+
+nav {
+    height: 90px;
+
+    background-color: #000000;
+    align-items: center;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+nav img {
+    margin-top: -30px;
+    width: 300px;
+}
+
+.head {
+    margin: 0;
+    padding: 0;
+}
+
+.b {
+    /* border: solid 1px rgb(0, 0, 0); */
+    width: 40%;
+    height: 80vh;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.b1 {
+
+    font-size: 25px;
+}
+
+.b1 h1 {
+    font-family: cursive;
+    padding: 50px 0;
+}
+
+.main li {
+    list-style: "✅ ";
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98vw;
+    margin-top: 50px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.email img {
+    width: 40px;
+}
+
+.b2 p {
+    color: rgba(0, 0, 0, 0.331);
+    font-size: 20px;
+    padding: 10px;
+}
+
+.b2 h1 {
+    margin-top: 20px;
+}
+
+.b2 .signup {
+    background-color: blue;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+
+}
+
+.b2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info input {
+    width: 300px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.check input {
+    width: 20px;
+    margin: 5px;
+}
+
+.check {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+label {
+    justify-content: left;
+}
+
+.btn-google {
+    padding: 10px;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:900px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .line {
+        width: 100vw;
+        height: 3px;
+    }
+
+    .b {
+        margin: 0;
+        padding: 0;
+        height: 50vh;
+        width: 50vh;
+    }
+    nav img{
+        width:250px;
+        margin-top: -10px;
+    }
+    nav{
+        width: 100vw;
+    }
+
+}
