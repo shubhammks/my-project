@@ -154,7 +154,7 @@ nav ul li {
 }
 
 .b {
-    border: 1px solid rgb(154, 154, 154);
+    border: 1px solid rgb(255, 255, 255);
     height: 180px;
     border-radius: 10px;
     width: 300px;
@@ -164,7 +164,7 @@ nav ul li {
     display: flex;
     text-align: center;
     box-shadow: #00000057 10px 9px 17px 5px;
-    background-color: #787fa8;
+    background-color: black;
 }
 
 .home {

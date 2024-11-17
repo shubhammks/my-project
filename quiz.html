@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empower U: Dynamic Form</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="form-container">
+    <h2>Empower U</h2>
+    <form id="dynamicForm">
+      <!-- Initial Question -->
+      <div class="form-group">
+        <label for="qualificationSelect">What is your qualification?</label>
+        <select id="qualificationSelect" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="10th">10th Pass</option>
+          <option value="12th">12th Pass</option>
+          <option value="Graduate">Graduate</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <!-- Dynamic Question Area -->
+      <div id="dynamicQuestionArea"></div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+  <script src="script1.js"></script>
+</body>
+</html>

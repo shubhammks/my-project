@@ -4,6 +4,9 @@
 
 }
 
+main {
+    background-color: #040714;
+}
 
 .menu>svg {
     display: none;
@@ -93,10 +96,10 @@ body {
 }
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 98.9vw;
-    background-color: #5dc7d4;
+    background-color: #5dc6d400;
     border-bottom: solid 1px rgb(141, 139, 139);
     z-index: 1;
 }
@@ -112,87 +115,115 @@ nav {
     align-items: center;
 }
 
+nav ul li a:hover {
+    background-color: red;
+}
+
 nav ul li a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: "Kaisei Decol", serif;
+    padding: 5px 10px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     font-size: 20px;
 }
 
 nav ul {
     display: flex;
-    gap: 45px;
+    gap: 25px;
     margin-right: 20px;
 
 }
 
 nav ul li {
     list-style: none;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
+
 }
 
-.main>div {
-    margin: 50px;
+.nav2 ul {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
 }
+
+main h3 {
+    margin-bottom: 50px;
+}
+
+/* .main>div {
+    margin: 50px;
+} */
 
 .main h3 {
     border-bottom: solid 2px rgb(255, 255, 255);
     text-align: center;
     color: white !important;
-   padding-top: 20px;
+    padding-top: 100px;
 }
 
 .main {
     font-size: 30px;
 }
 
+.descri li {
+    list-style:"●";
+    background:linear-gradient(to right, #6a11cb, #2575fc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 .descri {
+
     font-size: 25px;
-    margin-left: 20px
+    margin-left: 20px;
+    display: none;
+    text-align: left;
+    z-index: 1;
+    position: fixed;
+    top: 50px;
+    left: -20px;
+    background-color: rgb(255, 255, 255);
+    padding: 60px;
+    width: 91vw;
+    height: 80vh;
+
 }
 
 .card {
-    border: 1px solid black;
-    padding: 30px;
-    box-shadow: #00000057 10px 9px 17px 5px;
-    background-color: #787fa8;
-    width: 500px;
-    height: 50px;
-    text-align: center;
+    border: 1px solid white;
     overflow: hidden;
+    border-radius: 10px;
+    width: 400px;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
     position: relative;
 }
 
-
-.cards {
+.crds {
     display: flex;
-    justify-content: space-around;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
     gap: 30px;
-
 }
 
-.descri>li {
-    list-style: square;
-    text-align: left;
-}
-
-.descri {
-    /* max-height: 0;  
-    opacity: 0;  
-    overflow: hidden;  
-    transition: max-height 0.5s ease, opacity 0.5s ease; */
-    margin-top: 10px;
+.footer {
+    margin: 50px 0 0 0;
+    height: 50vh;
+    border-top: 2px solid white;
+    background-color: black;
 
 }
-
-/* .card:hover .descri {
-    max-height: 400px; 
-    opacity: 1; 
-  } */
-
 
 @keyframes expand {
     from {
@@ -213,19 +244,7 @@ nav ul li {
     }
 }
 
-.sci:hover {
-    animation: expand 2s ease-in-out forwards;
 
-}
-
-.com:hover {
-    animation: expand 2s ease-in-out forwards;
-
-}
-
-.art:hover {
-    animation: expand 2s ease-in-out forwards;
-}
 .bg {
     width: 100%;
     height: 1000px;
@@ -272,23 +291,19 @@ nav ul li {
         margin: 10px;
         width: 95%;
     }
-    .card {
-        width: 90%;
-        margin-bottom: 20px;
-        height: 80px;
-    }
 
-    .cards {
-
-        display: flex;
-        justify-content: space-around;
-        gap:30px 0;
-        flex-direction: column;
-    
-    }
-    .main{
+    .main {
         margin: 0;
     }
 
+    .card {
+        width: 100vw;
+        margin: 0;
+        /* padding: 0; */
+    }
 
+    .crds {
+        margin: 0;
+        padding: 0;
+    }
 }
