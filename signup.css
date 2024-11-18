@@ -4,7 +4,7 @@ nav div:hover {
 
 nav div a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(18 18 18);
 }
 
 nav div {
@@ -36,7 +36,8 @@ nav div {
 nav {
     height: 90px;
 
-    background-color: #000000;
+    background-color: #ffffff;
+
     align-items: center;
     display: flex;
 
@@ -49,12 +50,12 @@ nav {
 }
 
 body {
-    background-color: black;
+    background-color: #dde8e1;
     color: white;
 }
 
 nav img {
-    margin-top: -30px;
+    margin-top: 5px;
     width: 300px;
 }
 
@@ -71,6 +72,7 @@ nav img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color:black;
 }
 
 .b1 {
@@ -81,6 +83,7 @@ nav img {
 .b1 h1 {
     font-family: cursive;
     padding: 50px 0;
+    color:black;
 }
 
 .main li {
@@ -110,6 +113,7 @@ nav img {
     color: rgba(0, 0, 0, 0.331);
     font-size: 20px;
     padding: 10px;
+    color: black;
 }
 
 .b2 h1 {
