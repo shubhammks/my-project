@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: #ffffff;
+    color: #000000;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+.img {
+    width: 200px;
+}
+
+.pg2,
+.pg3 {
+    background-color: #040714;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.pg3 {
+    text-align: center;
+
+}
+
+.pg3 button {
+    padding: 10px 30px;
+    margin: 20px;
+    background-color: #0063e5;
+    color: white;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crd {
+    padding: 20px 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+    min-height: 336px;
+    flex-direction: column;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 98.9vw;
+    background-color: #fefefe;
+    border-bottom: solid 1px rgb(141, 139, 139);
+    z-index: 1;
+}
+
+nav div img {
+    width: 200px;
+    margin-left: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    background-image: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: "Kaisei Decol", serif;
+    padding: 5px 10px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    margin-right: 20px;
+
+}
+
+nav ul li {
+    list-style: none;
+
+}
+
+.nav2 ul {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wdth,wght@87.5,100..800&display=swap');
+
+.imgs {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img0 {
+    background-color: red;
+    width: 30vw;
+    height: 250px;
+}
+
+.nav2 ul li a {
+    color: white;
+    font-size: 25px;
+    font-family: monospace;
+}
+
+.nav2 ul li {
+    list-style: none;
+}
+
+.nav2 {
+    padding: 50px 0;
+}
+
+.imgs {
+    display: flex;
+    flex-wrap: wrap;
+    /* If you want the images to wrap */
+    gap: 40px;
+    /* Space between images */
+}
+
+.img0 {
+    width: 400px;
+    /* Set the desired width */
+    height: 250px;
+    /* Set the desired height */
+    overflow: hidden;
+    /* Hide overflowed parts of the image */
+}
+
+.img0 img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    /* Ensure the image covers the whole div */
+}
+
+nav button {
+    margin-right: -200px;
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+
+
+}
+
+
+.signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 100px;
+}
+
+.header-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header-content div {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 1000px;
+}
+
+.header-content p {
+    font-size: 25px;
+    font-weight: 300px;
+
+}
+
+.email-signup {
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+
+}
+
+.email-signup input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+
+.email-signup button {
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+
+.menu>svg {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.drop {
+    display: none;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu-button {
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    display: block;
+}
+
+.menu input[type="checkbox"] {
+    display: none;
+}
+
+.menu input[type="checkbox"]:checked~.dropdown {
+    display: block;
+}
+
+.dropdown li {
+    border-bottom: solid 1px rgb(234, 219, 219);
+    padding: 20px;
+}
+
+.quiz button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.quiz button {
+    background-image: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+
+
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: #000000;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 600px;
+    height: 1000px;
+    z-index: 10;
+    font-size: 70px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown a:hover {
+    background-color: #555;
+}
+
+.menu {
+    display: none;
+}
+
+
+
+.pionts ul {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+.pionts ul li {
+    font-size: 30px;
+}
+
+.ins {
+    text-decoration: underline white !important;
+}
+
+.crds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.card {
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    width: 1300px;
+    background-color: #414040b7;
+}
+
+.descri {
+    padding: 10px;
+    display: none;
+    font-size: 20px;
+    word-spacing: 3px;
+    line-height: 1.6;
+}
+
+.block {
+    display: block;
+}
+footer{
+    height: 30vh;
+}
+@media (max-width: 1000px) {
+
+    .email-signup {
+        flex-direction: column;
+        background-color: rgba(245, 222, 179, 0);
+    }
+
+    .email-signup input {
+        width: 80vw;
+        padding: 20px 20px 20px 10px;
+        border-radius: 200px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .email-signup button {
+        font-size: 40px;
+    }
+
+
+    .home {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    nav,
+    header {
+        width: 100vw;
+    }
+
+
+    .bg {
+        width: 100vw;
+        height: 1300px;
+    }
+
+    nav ul {
+        display: none;
+        gap: 0;
+        margin-right: 20px;
+
+    }
+
+    .menu {
+        display: block;
+        margin: 5px 10px;
+
+    }
+
+    .menu li {
+        list-style: none;
+    }
+
+    .b {
+        margin: 20px auto;
+        width: 60%;
+        height: 300px;
+    }
+
+    .b a {
+        font-size: 40px;
+    }
+
+    .header {
+        height: 50vh;
+    }
+
+    .logo img {
+        width: 400px;
+        height: 100px;
+    }
+
+    .nav2 ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 100px;
+
+    }
+
+    .pg2,
+    .pg3 {
+        height: 50vh;
+    }
+
+}

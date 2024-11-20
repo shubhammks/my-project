@@ -67,7 +67,7 @@
 }
 
 .dropdown a {
-    color: #fff;
+    color: #000000;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -90,14 +90,14 @@
 body {
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
-    background-color: #ffffff;
+    background-color: rgb(221 232 225);
 }
 
 header {
     position: sticky;
     top: 0;
     width: 98.9vw;
-    background-color: #5dc6d400;
+    background-color: #ffffff;
     border-bottom: solid 1px rgb(141, 139, 139);
     z-index: 1;
 }
@@ -114,11 +114,11 @@ nav {
 }
 
 nav ul li a:hover {
-    background-color: red;
+    background-image: linear-gradient(to right, #6a11cb, #2575fc);
 }
 nav ul li a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: "Kaisei Decol", serif;
     padding: 5px 10px;
     border-radius: 5px;
@@ -151,6 +151,7 @@ nav ul li {
 .b:hover {
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
     animation: boxanima 0.5s cubic-bezier(0, 0, 0, 0.97) forwards;
+    background-image: linear-gradient(to right, #6a11cb, #2575fc);
 }
 
 .b {
@@ -164,7 +165,7 @@ nav ul li {
     display: flex;
     text-align: center;
     box-shadow: #00000057 10px 9px 17px 5px;
-    background-color: black;
+    background-image: linear-gradient(to right, #6a11cb, #2575fc);
 }
 
 .home {
@@ -172,8 +173,17 @@ nav ul li {
     display: flex;
     font-size: 20px;
     justify-content: center;
+    background-color: rgb(221 232 225);
 }
-
+.h{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 20px;
+    background:linear-gradient(to right, #6a11cb, #2575fc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
 .b2 {
     align-items: center;
     text-align: center;

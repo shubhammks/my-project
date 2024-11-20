@@ -27,15 +27,27 @@ body {
 
 .pg2,
 .pg3 {
-    background-color: #040714;
+    background-color: rgb(221 232 225);
     height: 100vh;
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 98.9vw;
 }
 
+.pg3 h1,h3{
+    background:linear-gradient(to right, #6a11cb, #2575fc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.pg2 li {
+    background:linear-gradient(to right, #6a11cb, #2575fc);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
 .pg3 {
     text-align: center;
+    border-top: 2px solid black;
+    padding: 10px;
 
 }
 
@@ -44,6 +56,7 @@ body {
     margin: 20px;
     background-color: #0063e5;
     color: white;
+    border: none;
 }
 
 .cards {
@@ -60,17 +73,18 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     gap: 5px;
     min-height: 336px;
     flex-direction: column;
+    background-color: #000;
 }
 
 header {
     position: sticky;
     top: 0;
     width: 98.9vw;
-    background-color: #5dc6d400;
+    background-color: #ffffff;
     border-bottom: solid 1px rgb(141, 139, 139);
     z-index: 1;
     margin: -122px;
@@ -93,7 +107,7 @@ nav ul li a:hover {
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: "Kaisei Decol", serif;
     padding: 5px 10px;
     border-radius: 5px;
@@ -139,7 +153,6 @@ nav ul li {
 }
 
 .nav2 ul li a {
-    color: white;
     font-size: 25px;
     font-family: monospace;
 }
@@ -173,6 +186,7 @@ nav ul li {
     width: 100%;
     height: 100%;
     object-fit: fill;
+    border: 2px solid rgb(114, 114, 114);
     /* Ensure the image covers the whole div */
 }
 
@@ -348,9 +362,6 @@ nav button {
     font-size: 30px;
 }
 
-.ins {
-    text-decoration: underline white !important;
-}
 
 
 @media (max-width: 1000px) {
