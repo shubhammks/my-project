@@ -27,23 +27,24 @@ body {
 
 .pg2,
 .pg3 {
-    background-color: rgb(221 232 225);
+    background-color: rgb(0, 0, 0);
     height: 100vh;
     margin: 0;
     padding: 0;
     width: 98.9vw;
 }
 
-.pg3 h1,h3{
-    background:linear-gradient(to right, #6a11cb, #2575fc);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+.pg3 h1,
+h3 {
+    color: white;
 }
+
 .pg2 li {
-    background:linear-gradient(to right, #6a11cb, #2575fc);
+    background: linear-gradient(to right, #6a11cb, #2575fc);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
+
 .pg3 {
     text-align: center;
     border-top: 2px solid black;
@@ -68,7 +69,7 @@ body {
 .crd {
     padding: 20px 20px;
     border-radius: 10px;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.568);
     margin: 20px;
     text-align: center;
     display: flex;
@@ -84,8 +85,7 @@ header {
     position: sticky;
     top: 0;
     width: 98.9vw;
-    background-color: #ffffff;
-    border-bottom: solid 1px rgb(141, 139, 139);
+    background-color: #000000a8;
     z-index: 1;
     margin: -122px;
 }
@@ -107,7 +107,7 @@ nav ul li a:hover {
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: "Kaisei Decol", serif;
     padding: 5px 10px;
     border-radius: 5px;
@@ -296,19 +296,22 @@ nav button {
     border-bottom: solid 1px rgb(234, 219, 219);
     padding: 20px;
 }
- .quiz button a{
+
+.quiz button a {
     text-decoration: none;
     color: white;
     font-weight: bold;
- }
- .quiz button{
-   background-image: linear-gradient(to right, #6a11cb, #2575fc);
-   padding: 10px 20px;
-   border-radius: 5px;
-   border:none;
+}
+
+.quiz button {
+    background-image: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
 
 
- }
+}
+
 .dropdown {
     display: none;
     position: absolute;
@@ -362,6 +365,47 @@ nav button {
     font-size: 30px;
 }
 
+
+.footer nav {
+    width: 50vw;
+}
+
+.footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons img {
+    width: 20px;
+    margin: 0 10px;
+}
+
+.footer .language-selector {
+    margin-bottom: 10px;
+}
+
+.footer .copyright {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #aaaaaa;
+}
 
 
 @media (max-width: 1000px) {
@@ -440,7 +484,7 @@ nav button {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding:0 100px;
+        padding: 0 100px;
 
     }
 
